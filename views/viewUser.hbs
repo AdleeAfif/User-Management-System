@@ -1,0 +1,88 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Student</li>
+  </ol>
+</nav>
+
+{{#each rows}}
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-8">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Full Name"
+          name="name"
+          value="{{this.name}}"
+          disabled
+        />
+        <label for="floatingInput">Full Name</label>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Matric ID"
+          name="matric_id"
+          value="{{this.matric_id}}"
+          disabled
+        />
+        <label for="floatingInput">Matric ID</label>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Email"
+          name="email"
+          value="{{this.email}}"
+          disabled
+        />
+        <label for="floatingInput">E-Mail</label>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Course"
+          name="course"
+          value="{{this.course}}"
+          disabled
+        />
+        <label for="floatingInput">Course</label>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Company Name"
+          name="company"
+          value="{{this.company}}"
+          disabled
+        />
+        <label for="floatingInput">Company Name</label>
+      </div>
+    </div>
+  </form>
+{{/each}}
+<div class="col-12 d-grid">
+  <a href="/">
+    <button class="btn btn-primary">Back</button>
+  </a>
+</div>

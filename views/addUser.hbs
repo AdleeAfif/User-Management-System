@@ -1,0 +1,28 @@
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong>
+    New student has successfully added to the list!
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+{{/if}}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Add Student</li>
+  </ol>
+</nav>
+
+<form
+  class="row g-3 needs-validation"
+  method="post"
+  action="/addUser"
+  novalidate
+>
+  {{> user_form}}
+</form>

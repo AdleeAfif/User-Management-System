@@ -1,0 +1,1 @@
+CREATE TABLE `ums_database`.`user` (`id` INT NOT NULL , `matric_id` VARCHAR(10) NOT NULL , `name` VARCHAR(45) NOT NULL , `course` VARCHAR(45) NOT NULL , `company` VARCHAR(45) NOT NULL , `email` VARCHAR(45) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
